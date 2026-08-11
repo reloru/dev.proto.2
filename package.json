@@ -1,0 +1,30 @@
+{
+  "name": "claude-plugins",
+  "version": "1.0.0",
+  "description": "Plugin system for Claude Code with GitKraken integration",
+  "main": "src/index.js",
+  "bin": {
+    "claude-plugins": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node bin/cli.js",
+    "dev": "node --watch bin/cli.js"
+  },
+  "keywords": [
+    "claude",
+    "plugins",
+    "gitkraken",
+    "git",
+    "version-control"
+  ],
+  "author": "Anthropic",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}

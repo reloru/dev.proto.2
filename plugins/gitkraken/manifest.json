@@ -1,0 +1,55 @@
+{
+  "id": "gitkraken",
+  "name": "GitKraken",
+  "version": "1.0.0",
+  "description": "GitKraken integration for Claude Code - enhanced git workflows and visualization",
+  "author": "GitKraken LLC",
+  "license": "MIT",
+  "homepage": "https://www.gitkraken.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitkraken/claude-plugin"
+  },
+  "keywords": ["git", "version-control", "gitkraken", "collaboration"],
+  "capabilities": [
+    "git-operations",
+    "repository-visualization",
+    "branch-management",
+    "commit-analysis",
+    "conflict-resolution",
+    "team-collaboration"
+  ],
+  "permissions": [
+    "read:repositories",
+    "write:repositories",
+    "read:git-history",
+    "execute:git-commands"
+  ],
+  "configuration": {
+    "type": "object",
+    "properties": {
+      "apiKey": {
+        "type": "string",
+        "description": "GitKraken API key for authentication"
+      },
+      "theme": {
+        "type": "string",
+        "enum": ["light", "dark", "auto"],
+        "default": "auto",
+        "description": "UI theme preference"
+      },
+      "enableNotifications": {
+        "type": "boolean",
+        "default": true,
+        "description": "Enable push notifications for git events"
+      }
+    },
+    "required": []
+  },
+  "dependencies": {
+    "claude-sdk": ">=1.0.0"
+  },
+  "engines": {
+    "claude": ">=4.0.0"
+  }
+}
