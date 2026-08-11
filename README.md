@@ -39,3 +39,7 @@ After installation, GitKraken features will be available within Claude Code for 
 ## Development
 
 To create a new plugin, see the plugin development guide in `docs/plugin-development.md`.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
